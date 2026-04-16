@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fit Pet</title>
+</head>
+<body>
+
+<h1>🐾 FIT PET</h1>
+
+<h2>👤 Compte</h2>
+<form action="/compte" method="post">
+    <input name="nom" placeholder="Nom">
+    <select name="objectif">
+        <option value="perdre">Perdre</option>
+        <option value="prendre">Prendre</option>
+        <option value="maintenir">Maintenir</option>
+    </select>
+    <button>Créer</button>
+</form>
+
+<hr>
+
+<h2>📊 Dashboard</h2>
+<p>🍽️ {{ cal.mangees }}</p>
+<p>🏃 {{ cal.brulees }}</p>
+<p>💰 {{ coins }}</p>
+<p>🎮 XP {{ xp }}</p>
+
+<hr>
+
+<h2>🤖 Coach</h2>
+<p>{{ coach }}</p>
+
+<h2>🍽️ Repas</h2>
+<form action="/repas" method="post">
+    <input name="cal" placeholder="Calories">
+    <button>Ajouter</button>
+</form>
+
+<h2>🏃 Sport</h2>
+<form action="/sport" method="post">
+    <input name="cal" placeholder="Calories brûlées">
+    <button>Ajouter</button>
+</form>
+
+<h2>🍽️ IA repas</h2>
+<p>{{ meal }}</p>
+
+<h2>🔔 Notification</h2>
+<p>{{ notif }}</p>
+
+</body>
+</html>
